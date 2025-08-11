@@ -1,0 +1,37 @@
+name: flutter_advanced_cards
+description: The most powerful and customizable card widget for Flutter. Create stunning cards with advanced features like image positioning, interactive overlays, content grids, rating systems, and sophisticated button controls.
+version: 1.0.0
+homepage: https://github.com/Musaid1234/flutter_advanced_cards
+repository: https://github.com/Musaid1234/flutter_advanced_cards
+issue_tracker: https://github.com/Musaid1234/flutter_advanced_cards/issues
+documentation: https://github.com/Musaid1234/flutter_advanced_cards#readme
+
+topics:
+  - ui
+  - widgets
+  - cards
+  - material-design
+  - flutter-widget
+
+screenshots:
+  - description: 'Beautiful card examples showcasing different layouts and features'
+    path: images/image1.jpg
+  - description: 'Advanced card with background image and overlays'
+    path: images/image2.jpg
+  - description: 'Profile cards with actions and metrics'
+    path: images/image3.jpg
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
