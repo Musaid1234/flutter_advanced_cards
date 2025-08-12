@@ -98,7 +98,7 @@ class CardLayoutBuilder {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             imageWidget,
-            SizedBox(width: 12),
+            const SizedBox(width: 12),
             Expanded(
               child: Padding(
                 padding: padding ?? EdgeInsets.all(16.0),
@@ -118,7 +118,7 @@ class CardLayoutBuilder {
                 child: contentWidget,
               ),
             ),
-            SizedBox(width: 12),
+            const SizedBox(width: 12),
             imageWidget,
           ],
         );
@@ -271,6 +271,6 @@ class CardLayoutBuilder {
   }
   
   static Widget _buildStructuredContentPlaceholder() {
-    return SizedBox.shrink();
+    return const SizedBox.shrink();
   }
 }

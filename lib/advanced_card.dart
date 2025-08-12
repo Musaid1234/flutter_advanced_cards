@@ -145,7 +145,7 @@ class AdvancedCard extends StatelessWidget {
     final Widget? child;
 
     const AdvancedCard({
-        Key? key,
+        super.key,
 
         this.width,
         this.height,
@@ -279,7 +279,7 @@ class AdvancedCard extends StatelessWidget {
         this.buttonAlignment = MainAxisAlignment.center,
 
         this.child
-    }): super(key: key);
+    });
     
       @override
       Widget build(BuildContext context) {
@@ -319,8 +319,8 @@ class AdvancedCard extends StatelessWidget {
                     onTap: onTap,
                     onLongPress: onLongPress,
                     borderRadius: effectiveBorderRadius is BorderRadius 
-                        ? effectiveBorderRadius as BorderRadius 
-                        : null,
+                    ? effectiveBorderRadius 
+                    : null,
                     splashColor: (shadowColor ?? Colors.grey).withOpacity(0.1),
                     highlightColor: (shadowColor ?? Colors.grey).withOpacity(0.05),
                     hoverColor: enableHover 
@@ -506,7 +506,7 @@ Widget _buildCardContent() {
             buttonList.add(secondaryButton!);
         }
 
-        if (buttonList.isEmpty) return SizedBox.shrink();
+        if (buttonList.isEmpty) return const SizedBox.shrink();
 
         if (buttonList.length == 1) {
             return buttonList.first;
